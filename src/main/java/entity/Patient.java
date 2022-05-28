@@ -120,10 +120,10 @@ public class Patient {
     @Override
     public String toString() {
         String gender_ = (getGender().equals("male") ? "М" : "Ж");
-        return  "ФИО: " + getFirstName() + " " + getMiddleName() + " " + getLastName() +
+        return  "\nФИО: " + getFirstName() + " " + getMiddleName() + " " + getLastName() +
                 "\nВозраст: " + calcAge(getBirthday()) +
                 "\nПол: " + gender_ +
-                "\nТелефон: " + getPhoneNumber() + "\n";
+                "\nТелефон: " + getPhoneNumber();
 
     }
 }

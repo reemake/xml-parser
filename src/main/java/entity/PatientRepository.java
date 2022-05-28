@@ -19,6 +19,14 @@ public class PatientRepository {
     @XmlElement(name = "patient")
     private ArrayList<Patient> patients;
 
+    public ArrayList<Patient> getPatients() {
+        return patients;
+    }
+
+    public void setPatients(ArrayList<Patient> patients) {
+        this.patients = patients;
+    }
+
     public void sortByLastName() {
         Collections.sort(patients, Comparator.comparing(Patient::getLastName));
     }
@@ -30,13 +38,5 @@ public class PatientRepository {
     public void printInfo() {
         for (int i = 0; i < patients.size(); i++)
             System.out.println(patients.get(i));
-    }
-
-    public ArrayList<Patient> getPatients() {
-        return patients;
-    }
-
-    public void setPatients(ArrayList<Patient> patients) {
-        this.patients = patients;
     }
 }
