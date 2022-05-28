@@ -8,6 +8,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
+/**
+ * Class which is describing a repository storing information about patients
+ * @author Nikita Safonov
+ */
 @XmlRootElement(name = "patients")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class PatientRepository {

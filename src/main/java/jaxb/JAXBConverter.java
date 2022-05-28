@@ -11,6 +11,10 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 
+/**
+ * Class which is describing JAXB Converter
+ * @author Nikita Safonov
+ */
 public class JAXBConverter {
     private JAXBContext c;
     private Marshaller m;

@@ -9,6 +9,10 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.time.LocalDate;
 import java.time.Period;
 
+/**
+ * Class which is describing an entity Patient
+ * @author Nikita Safonov
+ */
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Patient {
 
@@ -49,6 +53,10 @@ public class Patient {
         this.phoneNumber = null;
     }
 
+    /**
+     * Function of calculating the age
+     * @return age in years
+     */
     public int calcAge(LocalDate birthday) {
         LocalDate currDate = LocalDate.now();
         if (birthday != null && currDate != null)
