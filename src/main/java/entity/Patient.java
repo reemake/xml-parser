@@ -1,5 +1,4 @@
 package entity;
-
 import jaxb.DateAdapter;
 
 import javax.xml.bind.annotation.XmlAccessType;

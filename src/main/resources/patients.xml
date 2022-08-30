@@ -1,41 +1,41 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="windows-1251"?>
 <patients>
     <patient>
-        <first_name>РРІР°РЅ</first_name>
-        <middle_name>РРІР°РЅРѕРІРёС‡</middle_name>
-        <last_name>РРІР°РЅРѕРІ</last_name>
+        <first_name>Иван</first_name>
+        <middle_name>Иванович</middle_name>
+        <last_name>Иванов</last_name>
         <birthday>1980-06-01</birthday>
         <gender>male</gender>
         <phone>+7-905-680-4476</phone>
     </patient>
     <patient>
-        <first_name>РџРµС‚СЂ</first_name>
-        <middle_name>РџРµС‚СЂРѕРІРёС‡</middle_name>
-        <last_name>РџРµС‚СЂРѕРІ</last_name>
+        <first_name>Петр</first_name>
+        <middle_name>Петрович</middle_name>
+        <last_name>Петров</last_name>
         <birthday>1985-11-04</birthday>
         <gender>male</gender>
         <phone>+7-920-230-1756</phone>
     </patient>
     <patient>
-        <first_name>Р›Р°СЂРёСЃР°</first_name>
-        <middle_name>РРІР°РЅРѕРІРЅР°</middle_name>
-        <last_name>Р›РёСЃРёС†С‹РЅР°</last_name>
+        <first_name>Лариса</first_name>
+        <middle_name>Ивановна</middle_name>
+        <last_name>Лисицына</last_name>
         <birthday>1990-03-25</birthday>
         <gender>female</gender>
         <phone>+7-980-719-1668</phone>
     </patient>
     <patient>
-        <first_name>РњР°СЂРёСЏ</first_name>
-        <middle_name>РџРµС‚СЂРѕРІРЅР°</middle_name>
-        <last_name>Р’РѕР»РєРѕРІР°</last_name>
+        <first_name>Мария</first_name>
+        <middle_name>Петровна</middle_name>
+        <last_name>Волкова</last_name>
         <birthday>1987-08-25</birthday>
         <gender>female</gender>
         <phone>+7-903-220-7681</phone>
     </patient>
     <patient>
-        <first_name>РњРёС…Р°РёР»</first_name>
-        <middle_name>Р’РёРєС‚РѕСЂРѕРІРёС‡</middle_name>
-        <last_name>РњРµРґРІРµРґРµРІ</last_name>
+        <first_name>Михаил</first_name>
+        <middle_name>Викторович</middle_name>
+        <last_name>Медведев</last_name>
         <birthday>1995-02-15</birthday>
         <gender>male</gender>
         <phone>+7-920-670-9643</phone>

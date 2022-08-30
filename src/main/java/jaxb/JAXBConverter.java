@@ -1,7 +1,7 @@
 package jaxb;
 
-import entity.Patient;
 import entity.PatientRepository;
+
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;

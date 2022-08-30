@@ -36,7 +36,15 @@ public class PatientRepository {
     }
 
     public void printInfo() {
-        for (int i = 0; i < patients.size(); i++)
-            System.out.println(patients.get(i));
+        String alignFormat = "|%-30s|%-11s|%-11s|%-20s|%n";
+
+        System.out.format("+------------------------------+-----------+-----------+--------------------+%n");
+        System.out.format("|             ФИО              |  Возраст  |    Пол    |       Телефон      |%n");
+        System.out.format("+------------------------------+-----------+-----------+--------------------+%n");
+
+        for(Patient p : patients) {
+            System.out.format(alignFormat, p.getLastName() + " " + p.getFirstName() + " " + p.getMiddleName(), p.getAge(), p.getGender(), p.getPhoneNumber());
+        }
+        System.out.format("+------------------------------+-----------+-----------+--------------------+%n");
     }
 }

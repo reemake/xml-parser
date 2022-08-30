@@ -1,36 +1,49 @@
+import validation.FilenameNotSpecifiedException;
 import entity.PatientRepository;
-import exception.FilenameNotSpecifiedException;
 import jaxb.JAXBConverter;
 
 import javax.xml.bind.JAXBException;
 import java.io.FileNotFoundException;
-import java.util.Scanner;
 
 public class Application {
 
-    public static void main(String[] args) throws FilenameNotSpecifiedException, JAXBException, FileNotFoundException {
+    private static void validateArgs(String[] args) throws FilenameNotSpecifiedException {
+        if (args.length == 0) {
+            throw new FilenameNotSpecifiedException("Параметры не заданы!");
+        }
+        else if (args.length == 1)
+            if (args[0].equals("age") || args[0].equals("name"))
+                throw new FilenameNotSpecifiedException("Имя файла не указано!");
+    }
 
-        JAXBConverter jaxbConverter;
-        PatientRepository patients;
+    public static void main(String[] args) throws FilenameNotSpecifiedException, FileNotFoundException, JAXBException {
 
-        Scanner in = new Scanner(System.in);
-        System.out.print("Введите имя XML-файла: ");
-        String filename = in.nextLine();
-        if (filename.equals(""))
-            throw new FilenameNotSpecifiedException("Имя файла не указано!");
-        else {
+        try {
+            validateArgs(args);
+
+            JAXBConverter jaxbConverter;
+            PatientRepository patients;
+
+            String filename = args[0];
             jaxbConverter = new JAXBConverter(PatientRepository.class);
             patients = jaxbConverter.unmarshall("src/main/resources/" + filename + ".xml");
-        }
-        System.out.print("Укажите способ сортировки: ");
-        String sortBy = in.nextLine();
-        if (sortBy.equals("name")) {
-            patients.sortByLastName();
-        }
-        else if (sortBy.equals("age")) {
-            patients.sortByAge();
+
+            if (args.length == 2) {
+                String sortBy = args[1];
+                if (sortBy.equals("name")) {
+                    patients.sortByLastName();
+                } else if (sortBy.equals("age")) {
+                    patients.sortByAge();
+                }
+            }
+
+            patients.printInfo();
+
+        } catch (JAXBException e) {
+            System.out.println(e);;
+        } catch (FileNotFoundException e) {
+            System.out.println(e);;
         }
 
-        patients.printInfo();
     }
 }
