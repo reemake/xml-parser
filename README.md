@@ -75,4 +75,4 @@
 2. В cmd выполнить:  
    ***cd [ваш_путь]/xml-parser***  
    ***mvn clean install***  
-   ***java -jar target/xml-parser-1.0.jar [название_xml_файла] [метод_сортировки]***
+   ***java -jar target/xml-parser-1.0.jar [имя_xml_файла] [способ_сортировки]***
