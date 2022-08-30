@@ -1,4 +1,4 @@
-package validation;
+package exception;
 
 public class FilenameNotSpecifiedException extends Exception {
     public FilenameNotSpecifiedException(String message) {

@@ -1,4 +1,4 @@
-import validation.FilenameNotSpecifiedException;
+import exception.FilenameNotSpecifiedException;
 import entity.PatientRepository;
 import jaxb.JAXBConverter;
 
